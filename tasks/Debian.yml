@@ -1,8 +1,7 @@
 ---
 #tasks file for AnsibleRoleOsLinuxInstallAptitude specyfic for Debian based OS
-- name: Update cache
+- name: Install latest Aptitude package
   apt:
     name: aptitude
     state: latest
     update_cache: yes
-    cache_valid_time: 3600
